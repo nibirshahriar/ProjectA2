@@ -16,6 +16,43 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
+
+/* Animation */
+ @keyframes pulse {
+     0% {
+         transform: scale(1);
+     }
+     50% {
+         transform: scale(1.05);
+     }
+     100% {
+         transform: scale(1);
+     }
+ }
+
+ .hero-ic {
+     animation: pulse 4s ease-in-out infinite;
+ }
+
+ /* Button animation */
+ .btn,
+ .green-btn {
+     transition: all 0.3s ease;
+     cursor: pointer;
+ }
+ .btn:hover {
+     transform: translateY(-4px) scale(1.03);
+     box-shadow: 0 10px 30px rgba(251, 9, 180, 0.4);
+ }
+ .green-btn:hover {
+     transform: translateY(-3px) scale(1.03);
+     background-color: #00FF88;
+ }
+ .green-btn:hover a {
+     color: #1A0B2E;
+ }
+
+
 /* shared style */
 .btn {
     padding: 12px 16px;
