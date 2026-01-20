@@ -39,7 +39,7 @@ body {
     text-align: center;
 }
 .description {
-    font-size:1rem;
+    font-size: 1rem;
     line-height: 35px;
     margin-top: 16px;
 }
@@ -188,10 +188,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-/* .bar{
-    margin: 80px 0;
-    border: 0.1px solid #412567;
-} */
 #about .about-box .about-card {
     display: flex;
     flex-direction: column;
@@ -223,7 +219,7 @@ body {
 
 #card-02,
 #card-03,
-#card-04 {
+#card-04{
     grid-column: span 2;
 }
 
@@ -327,6 +323,84 @@ color: #00FF88;
     justify-content: center;
 }
 
+/* Footer */
+footer {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./B13-A02-TechWave/assets/footer-bg.png);
+    background-size: cover;
+    padding: clamp(2.5rem, -0.3rem + 8vw, 7.5rem) clamp(1.25rem, -5rem + 18vw, 12rem);
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: clamp(2.5rem, 1.9rem + 3vw, 3.75rem);
+    text-align: center;
+}
+
+footer .footer-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 32px 0;
+}
+
+footer .footer-menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Responsive Design for Medium Device */
+@media screen and (max-width: 992px) {
+    #about .about-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    #why-choose .why-choose-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #card-01 {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    #card-02,
+    #card-03,
+    #card-04,
+    #card-05 {
+        grid-column: span 1;
+    }
+
+    #host .host-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .host-profile img {
+        width: 150px;
+        height: auto;
+    }
+
+    .host-content .host-social {
+        justify-content: center;
+    }
+
+    footer .footer-menu {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
 /* Responsive Design for Mobile Device */
 @media screen and (max-width: 576px) {
     #nav-content {
@@ -390,18 +464,18 @@ color: #00FF88;
      grid-template-columns: repeat(2, 1fr);
      padding-top: 40px;
  }
+                #why-choose .why-choose-box {
+                    grid-template-columns: 1fr;
+                }
+                #card-01,
+                #card-02,
+                #card-03,
+                #card-04,
+                #card-05 {
+                    grid-column: auto;
+                    grid-row: auto;
+                }
 
-    #why-choose .why-choose-box {
-            grid-template-columns: 1fr;
-   }
-
-   #card-01,
-   #card-02,
-   #card-03,
-   #card-04 {
-       grid-column: span 1;
-       grid-row: span 1;
-   }
    .featured-box .featured-card {
        max-width: 100%;
    }
@@ -414,44 +488,8 @@ color: #00FF88;
       text-align: center;
       padding: 20px;
   }
-}
+ #copyright {
+     font-size: 0.85rem;
+ }
 
-
-/* Responsive Design for Medium Device */
-@media screen and (max-width: 992px) {
-#about .about-box {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-
-#why-choose .why-choose-box {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-#card-01 {
-    grid-row: span 1;
-    grid-column: span 2;
-}
-
-#card-02,
-#card-03,
-#card-04,
-#card-05 {
-    grid-column: span 1;
-}
-
-  #host .host-card {
-      flex-direction: column;
-      text-align: center;
-      padding: 30px;
-  }
-
-  .host-profile img {
-      width: 150px;
-      height: auto;
-  }
-
-  .host-content .host-social {
-      justify-content: center;
-  }
 }
