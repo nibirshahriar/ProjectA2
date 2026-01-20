@@ -167,3 +167,58 @@ body {
     text-align: center;
     gap: 6px;
 }
+
+/* Responsive Design for Mobile Device */
+@media screen and (max-width: 576px) {
+    #nav-content {
+        display: none;
+        width: 100%;
+        background-color: #230E3D;
+        padding: 30px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        z-index: 100;
+        text-align: center;
+        gap: 20px;
+    }
+    #menu-tog:checked~#nav-content {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    #menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav-btn {
+        display: inline-block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    #banner{
+        padding: 40px 0;
+        background-image: url(./B13-A02-TechWave/assets/hero-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        min-height: 400px;
+    }
+    .hero-ic{
+        max-width: 250px;
+        margin-top: 20px;
+    }
+    #icon-one {
+        width: 100%;
+        height: auto;
+    }
+    #hero-description {
+        text-align: center;
+    }
+}
+/* Responsive Design for Medium Device */
+@media screen and (max-width: 992px) {}
