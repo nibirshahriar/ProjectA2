@@ -287,6 +287,46 @@ body {
 color: #00FF88;
 }
 
+/* Host Section */
+#host {
+    margin-bottom: clamp(2.5rem, -0.3rem + 8vw, 7.5rem);
+    padding: 0 clamp(1.25rem, -5rem + 18vw, 12rem);
+}
+
+#host .host-card {
+    padding: 40px;
+    display: flex;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 15px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.host-content .host-name {
+    font-size:clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
+    font-weight: 700;
+}
+
+.host-content .host-social {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.host-social .social-icon {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #533C72;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
 /* Responsive Design for Mobile Device */
 @media screen and (max-width: 576px) {
     #nav-content {
@@ -369,6 +409,11 @@ color: #00FF88;
  flex-wrap: wrap;
 }
 
+  #host .host-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+  }
 }
 
 
@@ -394,4 +439,19 @@ color: #00FF88;
 #card-05 {
     grid-column: span 1;
 }
+
+  #host .host-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+  }
+
+  .host-profile img {
+      width: 150px;
+      height: auto;
+  }
+
+  .host-content .host-social {
+      justify-content: center;
+  }
 }
