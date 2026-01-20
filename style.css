@@ -204,6 +204,89 @@ body {
     font-size: clamp(2.5rem, 2.25rem + 1.25vw, 3rem);
 }
 
+/* Why choose */
+#why-choose {
+    background-color: #230E3D;
+    padding: clamp(2.5rem, -0.312rem + 7.812vw, 7.5rem) clamp(1.25rem, -5.078rem + 17.578vw, 12.5rem);
+}
+
+#why-choose .why-choose-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 40px;
+}
+
+#card-01 {
+    grid-row: span 2;
+}
+
+#card-02,
+#card-03,
+#card-04 {
+    grid-column: span 2;
+}
+
+.why-choose-box .why-choose-card {
+    padding: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+
+.why-choose-card .why-choose-card-title {
+    font-size: clamp(1.375rem, 1.307rem + 0.455vw, 1.5rem);
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+/* Featured*/
+#featured {
+    padding: clamp(2.5rem, -0.3rem + 8vw, 7.5rem) clamp(1.25rem, -5rem + 18vw, 12rem);
+
+}
+
+#featured .featured-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 22px;
+}
+
+.featured-box .featured-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 15px;
+    max-width: 380px;
+}
+
+.featured-card .card-content {
+    padding: 20px;
+}
+
+.featured-card .featured-card-title {
+    font-size: clamp(1.4rem, 1.3rem + 0.5vw, 1.5rem);
+    font-weight: 700;
+
+}
+
+.card-content .video-duration {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin-top: 12px;
+}
+
+.featured-card iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+#green-time{
+color: #00FF88;
+}
+
 /* Responsive Design for Mobile Device */
 @media screen and (max-width: 576px) {
     #nav-content {
@@ -244,6 +327,8 @@ body {
         width: 100%;
         min-height: 400px;
     }
+
+
     .hero-ic{
         max-width: 250px;
         margin-top: 20px;
@@ -265,11 +350,48 @@ body {
      grid-template-columns: repeat(2, 1fr);
      padding-top: 40px;
  }
+
+    #why-choose .why-choose-box {
+            grid-template-columns: 1fr;
+   }
+
+   #card-01,
+   #card-02,
+   #card-03,
+   #card-04 {
+       grid-column: span 1;
+       grid-row: span 1;
+   }
+   .featured-box .featured-card {
+       max-width: 100%;
+   }
+#featured .featured-box {
+ flex-wrap: wrap;
 }
+
+}
+
+
 /* Responsive Design for Medium Device */
 @media screen and (max-width: 992px) {
 #about .about-box {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
+
+#why-choose .why-choose-box {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#card-01 {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+#card-02,
+#card-03,
+#card-04,
+#card-05 {
+    grid-column: span 1;
+}
 }
